@@ -1,0 +1,35 @@
+print("a=")
+let s_o_a = readLine()//string
+if let s_a =s_o_a
+{
+let f_o_a = float(s_a)
+if  let f_a =f_o_a
+{
+print("a=")
+let s_o_a = readLine()//string
+if let s_a =s_o_a
+{
+let f_o_a = float(s_a)
+if  let f_a =f_o_a
+{
+
+}
+else{
+  print("nu sa putut converti b")
+
+}
+}
+else
+{
+  print("nu am citit nimic in b")
+}
+}
+else{
+  print("nu sa putut converti a")
+
+}
+}
+else
+{
+  print("nu am citit nimic in a")
+}
