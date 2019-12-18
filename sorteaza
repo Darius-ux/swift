@@ -1,0 +1,93 @@
+func sorteaza( _a: inout [Int], _criteriu: (_x: Int, _y: Int)->Bool)
+{//bule
+var sortate=false
+repeat{
+  var i=0
+  sortate=true
+  while i<a.count -1
+  {
+    if criteriu(a[i], a[i + 1]){
+      let tmp= a[i]
+      a[i] = a [i + 1]
+      a [i + 1] = tmp
+      sortate= false
+    }
+    i += 1
+  }
+
+}while !sortate
+
+}
+
+var a=[1, 2, -1]
+/*
+func criteriu1(_x: int, _y: Int) ->Bool
+{
+if x<y{
+  return true
+}
+else{
+  return false
+}
+}
+
+sorteaza(&a, criteriu1)
+*/
+for i in a{
+  print(i)
+}
+
+//2
+
+var criteriu1 = {
+  (_x: int, _y: Int) -> Bool in
+{
+if x < y{
+  return true
+}
+else{
+  return false
+}
+sorteaza(&a, criteriu1)
+
+//4
+/*sorteaza(&a){
+  (_x: int, _y: Int) -> Bool in
+{
+if x < y{
+  return true
+}
+else{
+  return false
+}
+}
+}*/
+
+//5
+/*sorteaza(&a){
+  (_x: int, _y: Int) -> Bool in
+  return x > y
+}*/
+
+//6
+/*sorteaza(&a){
+  (_x: int, _y: Int) -> Bool in
+  x > y
+}
+
+for i in a{
+
+}*/
+
+//7
+/*sorteaza(&a){
+  x, y in x > _y}
+
+  for i in a{
+
+}*/
+
+//8
+sorteaza (&a){
+  $0 > $1
+}
